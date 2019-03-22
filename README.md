@@ -1,6 +1,12 @@
 # WebCare integration
 External developers can integrate WebCare into their websites, CM - Systems or Webshops. Examples would be our Magento integration or modules for WordPress or Typo3
 
+# Existing integrations
+Existing integrations are:
+
+* Magento 2: https://github.com/datareporter-gmbh/module-webcare
+' WordPress: in Development, arriving soon (March 2019)
+
 # Prerequisites
 You would need an active WebCare installation to generate the needed IDs and files for your website. However, you can use our demo keys for development as the integration will not change (except for those IDs).
 
@@ -21,8 +27,6 @@ There are three IDs, and one of them is optional:
 * Client ID: Identifies the client (mandatory)
 * Organization ID: Identifies the organization of the client (mandatory)
 * Website ID: If the organization has multiple websites, this ID identifies the website (optional)
-
-Those IDs consist of alphanumerical characters (case sensitive) and a "-" sign. No spaces are allowed.
 
 The IDs are used to build the path for the included contents (CSS and JavaScript files) to include in your HTML code.
 
