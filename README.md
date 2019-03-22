@@ -38,6 +38,13 @@ or (without the optional Website ID:
     
     https://webcache.datareporter.eu/c/<ClientID>/<OrganizationID>/<Filename>.<Extension>
 
+# Best Practice for Modules
+When designing a module GUI you should keep ease of use in mind. Simply let the user enter those IDs and alert them if one of the mandatory fields is not entered.
+
+For the privacy statement and the imprint, use the preferred way of your system to place the content where it should be displayed on the website.
+
+For the cookie banner, use the preferred way of your system to include the banner on every page in your website (like the page header).
+
 # Cookie Banner integration
 The cookie banner integration code containing the demo IDs would be:
 
