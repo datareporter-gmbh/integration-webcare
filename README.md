@@ -75,6 +75,20 @@ The code should be included exactly in the place where the privacy statement sho
 
 The styles used in the privacy statement are default HTML styles like ```<h1>...</h1>```, ```<p>...</p>```and so on, so if your page stylesheet covers the default tags, you should be fine.
 
+## Alternative integration with div tag
+For some CMS systems it may be necessary to separate JavaScript code and the insertion place. In this case you can opt to integrate using our "v2" versions of the integration. You can simply add "\_v2" to the javascript filename - resulting in a filename ```privacynotice_v2.js```.
+
+Using this, you can add an empty div tag to your website with the id ```dr-privacynotice-div``` where the privacy notice will be inserted when page loading has finished.
+
+This is how the integration would look like:
+
+```html
+<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_v2.js"></script>
+...
+<div id="dr-privacynotice-div"></div>
+...
+```
+
 # Imprint integration
 The imprint integration would look like this:
 
@@ -87,6 +101,21 @@ The imprint integration would look like this:
 The code should be included exactly in the place where the imprint should appear (the integration code is replaced by the HTML - generated imprint)
 
 The styles used in the imprint are default HTML styles like ```<h1>...</h1>```, ```<p>...</p>```and so on, so if your page stylesheet covers the default tags, you should be fine.
+
+## Alternative integration with div tag
+For some CMS systems it may be necessary to separate JavaScript code and the insertion place. In this case you can opt to integrate using our "v2" versions of the integration. You can simply add "\_v2" to the javascript filename - resulting in a filename ```imprint_v2.js```.
+
+Using this, you can add an empty div tag to your website with the id ```dr-imprint-div``` where the imprint will be inserted when page loading has finished.
+
+This is how the integration would look like:
+
+```html
+<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_v2.js"></script>
+...
+<div id="dr-imprint-div"></div>
+...
+```
+
 
 # Congratulations
 You are now good to go implementing a module for your favourite CMS or WebShop. 
