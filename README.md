@@ -5,7 +5,7 @@ External developers can integrate WebCare into their websites, CM - Systems or W
 Existing integrations are:
 
 * Magento 2: https://github.com/datareporter-gmbh/module-webcare
-* WordPress: in Development, arriving soon (March 2019)
+* WordPress: https://wordpress.org/plugins/datareporter-webcare/
 
 # Prerequisites
 You would need an active WebCare installation to generate the needed IDs and files for your website. However, you can use our demo keys for development as the integration will not change (except for those IDs).
