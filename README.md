@@ -41,7 +41,7 @@ or (without the optional Website ID:
 # Best Practice for Modules
 When designing a module GUI you should keep ease of use in mind. Simply let the user enter those IDs and alert them if one of the mandatory fields is not entered.
 
-For the privacy statement and the imprint, use the preferred way of your system to place the content where it should be displayed on the website.
+For the privacy statement and the imprint, use the preferred way of your system to place the content where it should be displayed on the website. Please include the noscript tag to show those informations to users without activated JavaScript.
 
 For the cookie banner, use the preferred way of your system to include the banner on every page in your website (like the page header).
 
@@ -67,6 +67,9 @@ The privacy statement integration code looks like this:
 
 ```html
 <script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice.js"></script>
+<noscript>
+  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_noscript.html"></iframe>
+</noscript>
 ```
 
 In this case, the website ID is not included.
@@ -86,6 +89,9 @@ This is how the integration would look like:
 <script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_v2.js"></script>
 ...
 <div id="dr-privacynotice-div"></div>
+<noscript>
+  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_noscript.html"></iframe>
+</noscript>
 ...
 ```
 
@@ -94,6 +100,9 @@ The imprint integration would look like this:
 
 ```html
 <script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint.js"></script>
+<noscript>
+  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_noscript.html"></iframe>
+</noscript>
 ```
 
 ** As the imprint is always generated for an organization, no website ID is allowed here! **
@@ -113,6 +122,9 @@ This is how the integration would look like:
 <script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_v2.js"></script>
 ...
 <div id="dr-imprint-div"></div>
+<noscript>
+  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_noscript.html"></iframe>
+</noscript>
 ...
 ```
 
