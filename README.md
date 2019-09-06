@@ -6,6 +6,7 @@ Existing integrations are:
 
 * Magento 2: https://github.com/datareporter-gmbh/module-webcare
 * WordPress: https://wordpress.org/plugins/datareporter-webcare/
+* TYPO3: https://extensions.typo3.org/extension/webcare/
 
 # Prerequisites
 You would need an active WebCare installation to generate the needed IDs and files for your website. However, you can use our demo keys for development as the integration will not change (except for those IDs).
