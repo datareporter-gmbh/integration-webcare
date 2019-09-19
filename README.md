@@ -7,6 +7,7 @@ Existing integrations are:
 * Magento 2: https://github.com/datareporter-gmbh/module-webcare
 * WordPress: https://wordpress.org/plugins/datareporter-webcare/
 * TYPO3: https://extensions.typo3.org/extension/webcare/
+* Google Tag Manager: https://doku.datareporter.eu/doku.php?id=function:webcare_gtm
 
 # Prerequisites
 You would need an active WebCare installation to generate the needed IDs and files for your website. However, you can use our demo keys for development as the integration will not change (except for those IDs).
@@ -51,7 +52,7 @@ The cookie banner integration code containing the demo IDs would be:
 
 ```html
 <link href="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/q68/banner.css" rel="stylesheet">
-<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/q68/banner.js"></script>
+<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/q68/banner.js" charset="utf-8"></script>
 <script>
   window.cookieconsent.initialise(dr_cookiebanner_options);
 </script>
@@ -67,7 +68,7 @@ Styling of the cookiebanner and its options are managed using the WebCare GUI.
 The privacy statement integration code looks like this:
 
 ```html
-<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice.js"></script>
+<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice.js" charset="utf-8"></script>
 <noscript>
   <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_noscript.html"></iframe>
 </noscript>
@@ -87,7 +88,7 @@ Using this, you can add an empty div tag to your website with the id ```dr-priva
 This is how the integration would look like:
 
 ```html
-<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_v2.js"></script>
+<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_v2.js" charset="utf-8"></script>
 ...
 <div id="dr-privacynotice-div"></div>
 <noscript>
@@ -100,7 +101,7 @@ This is how the integration would look like:
 The imprint integration would look like this:
 
 ```html
-<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint.js"></script>
+<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint.js" charset="utf-8"></script>
 <noscript>
   <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_noscript.html"></iframe>
 </noscript>
@@ -120,7 +121,7 @@ Using this, you can add an empty div tag to your website with the id ```dr-impri
 This is how the integration would look like:
 
 ```html
-<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_v2.js"></script>
+<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_v2.js" charset="utf-8"></script>
 ...
 <div id="dr-imprint-div"></div>
 <noscript>
