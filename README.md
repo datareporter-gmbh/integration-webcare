@@ -58,7 +58,7 @@ The cookie banner integration code containing the demo IDs would be:
 </script>
 ```
 
-In this case, the paths are generated with the optional website ID. This can be omitted.
+In this case, the paths are generated with the optional website ID. This is the preferred method.
 
 The code can be included in your website between your ```<body> ... </body>``` tags. Nothing more is needed to show the cookiebanner and remove cookies without the user´s consent.
 
