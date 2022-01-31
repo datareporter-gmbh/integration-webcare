@@ -34,11 +34,13 @@ The IDs are used to build the path for the included contents (CSS and JavaScript
 
 Paths are always built using the following scheme:
 
-    https://webcache.datareporter.eu/c/<ClientID>/<OrganizationID>/<WebsiteID>/<Filename>.<Extension>
+    https://webcache-eu.datareporter.eu/c/<ClientID>/<OrganizationID>/<WebsiteID>/<Filename>.<Extension>
     
 or (without the optional Website ID:
     
-    https://webcache.datareporter.eu/c/<ClientID>/<OrganizationID>/<Filename>.<Extension>
+    https://webcache-eu.datareporter.eu/c/<ClientID>/<OrganizationID>/<Filename>.<Extension>
+    
+Please note, that the base Url is now **https://webcache-eu.datareporter.eu** (with an added "-eu" to webcache). This points to our EU - based CDN instead of the AWS CloudFront CDN. CloudFront will also work but for GDPR reasons we recommend our CDN located entirely in Europe.
 
 # Best Practice for Modules
 When designing a module GUI you should keep ease of use in mind. Simply let the user enter those IDs and alert them if one of the mandatory fields is not entered.
@@ -51,8 +53,8 @@ For the cookie banner, use the preferred way of your system to include the banne
 The cookie banner integration code containing the demo IDs would be:
 
 ```html
-<link href="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/q68/banner.css" rel="stylesheet">
-<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/q68/banner.js" charset="utf-8"></script>
+<link href="https://webcache-eu.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/q68/banner.css" rel="stylesheet">
+<script src="https://webcache-eu.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/q68/banner.js" charset="utf-8"></script>
 <script>
   window.cookieconsent.initialise(dr_cookiebanner_options);
 </script>
@@ -68,9 +70,9 @@ Styling of the cookiebanner and its options are managed using the WebCare GUI.
 The privacy statement integration code looks like this:
 
 ```html
-<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice.js" charset="utf-8"></script>
+<script src="https://webcache-eu.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice.js" charset="utf-8"></script>
 <noscript>
-  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_noscript.html"></iframe>
+  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache-eu.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_noscript.html"></iframe>
 </noscript>
 ```
 
@@ -88,11 +90,11 @@ Using this, you can add an empty div tag to your website with the id ```dr-priva
 This is how the integration would look like:
 
 ```html
-<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_v2.js" charset="utf-8"></script>
+<script src="https://webcache-eu.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_v2.js" charset="utf-8"></script>
 ...
 <div id="dr-privacynotice-div"></div>
 <noscript>
-  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_noscript.html"></iframe>
+  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache-eu.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/privacynotice_noscript.html"></iframe>
 </noscript>
 ...
 ```
@@ -101,9 +103,9 @@ This is how the integration would look like:
 The imprint integration would look like this:
 
 ```html
-<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint.js" charset="utf-8"></script>
+<script src="https://webcache-eu.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint.js" charset="utf-8"></script>
 <noscript>
-  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_noscript.html"></iframe>
+  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache-eu.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_noscript.html"></iframe>
 </noscript>
 ```
 
@@ -121,11 +123,11 @@ Using this, you can add an empty div tag to your website with the id ```dr-impri
 This is how the integration would look like:
 
 ```html
-<script src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_v2.js" charset="utf-8"></script>
+<script src="https://webcache-eu.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_v2.js" charset="utf-8"></script>
 ...
 <div id="dr-imprint-div"></div>
 <noscript>
-  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_noscript.html"></iframe>
+  <iframe width="100%" frameborder="0" style="min-height:400px;" src="https://webcache-eu.datareporter.eu/c/cac205cf-151f-4694-a7eb-4eadfe543cbe/jeSnrpV83Ln/imprint_noscript.html"></iframe>
 </noscript>
 ...
 ```
